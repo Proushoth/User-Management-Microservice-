@@ -7,17 +7,17 @@ import javax.persistence.*;
 public class Register {
 
     @Id
-    @Column(name = "Customer_Id", length = 45)
+    @Column(name = "Customer_Id")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int registerid;
 
-    @Column(name = "Customer_name", length = 255)
+    @Column(name = "Customer_name")
     private String registername;
 
-    @Column(name = "email", length = 255)
+    @Column(name = "email")
     private String email;
 
-    @Column(name = "password", length = 255)
+    @Column(name = "password")
     private String password;
 
 
